@@ -20,9 +20,8 @@ class BankAccount {
         }
     }
 
-    public void displaySummary() {
-        System.out.println("Owner: " + owner);
-        System.out.printf("Balance: %.2f\n", balance); // แสดงทศนิยม 2 ตำแหน่ง
+    public void displayBalance() {
+        System.out.printf("Balance: %.2f\n", balance);
     }
 }
 
@@ -47,7 +46,7 @@ public class Lab2_7 {
         account.withdraw(withdraw1);
         account.withdraw(withdraw2);
 
-        account.displaySummary();
+        account.displayBalance();
 
         scanner.close();
     }
