@@ -54,15 +54,13 @@ public class lab5_10 {
         String simpleDesc = scanner.nextLine();
         int simpleHours = scanner.nextInt();
 
-        ProjectTask complexTask =
-                new ComplexTask(complexDesc, complexHours, setupFee);
-        ProjectTask simpleTask =
-                new SimpleTask(simpleDesc, simpleHours);
+        ProjectTask complexTask = new ComplexTask(complexDesc, complexHours, setupFee);
+        ProjectTask simpleTask = new SimpleTask(simpleDesc, simpleHours);
 
         ProjectTask[] tasks = { complexTask, simpleTask };
 
         for (ProjectTask task : tasks) {
-           System.out.printf("%.1f%n", task.calculateCost());
+            System.out.printf("%.1f%n", task.calculateCost());
         }
 
         scanner.close();
